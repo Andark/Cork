@@ -12,7 +12,8 @@ import AppKit
 @MainActor
 class AppState: ObservableObject {
     // MARK: - Licensing
-    @Published var licensingState: LicensingState = .notBoughtOrHasNotActivatedDemo
+//    @Published var licensingState: LicensingState = .notBoughtOrHasNotActivatedDemo
+    @Published var licensingState: LicensingState = .bought // 默认值修改为已购买
     @Published var isShowingLicensingSheet: Bool = false
     
     // MARK: - Navigation

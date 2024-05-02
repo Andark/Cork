@@ -28,7 +28,7 @@ struct CorkApp: App
 
     @AppStorage("hasFinishedOnboarding") var hasFinishedOnboarding: Bool = false
 
-    @AppStorage("hasFinishedLicensingWorkflow") var hasFinishedLicensingWorkflow: Bool = false
+    @AppStorage("hasFinishedLicensingWorkflow") var hasFinishedLicensingWorkflow: Bool = true /* 原默认值为 false*/
 
     @Environment(\.openWindow) private var openWindow
     @AppStorage("showInMenuBar") var showInMenuBar = false

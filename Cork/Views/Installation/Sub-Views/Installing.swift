@@ -101,7 +101,7 @@ struct InstallingPackageView: View
         }
         .task(priority: .userInitiated)
         {
-            for var packageToInstall in installationProgressTracker.packagesBeingInstalled
+            for _ in installationProgressTracker.packagesBeingInstalled
             {
                 do
                 {
